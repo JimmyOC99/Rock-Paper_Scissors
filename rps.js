@@ -37,21 +37,29 @@ function game() {
     rounds = parseInt(prompt("How many rounds?"));
     player_score = 0
     computer_score = 0
-    for (let i = 0; i < rounds; i++) {
-        let player_selection = prompt("Rock, Paper, Scissors?").toLowerCase()
-        play_round(player_selection)
-        console.log(`Current Scores. You:${player_score}, Computer:${computer_score}`)
-        if (player_score === Math.ceil(rounds/2)) {
-            console.log(`CONGRATULATIONS!!! You won!`)
-            break 
-        }
-        if (computer_score === Math.ceil(rounds/2)){
-            console.log(`Commiserations...You lost.`)
-            break
-        }
+    if (player_score === Math.ceil(rounds/2)) {
+        console.log(`CONGRATULATIONS!!! You won!`)
     }
-
-    console.log(`Final Scores You:${player_score}, Computer:${computer_score}`)
+    else if (computer_score === Math.ceil(rounds/2)){
+        console.log(`Commiserations...You lost.`)
+    }
+    else {
+        for (let i = 0; i < rounds; i++) {
+            let player_selection = prompt("Rock, Paper, Scissors?").toLowerCase()
+            play_round(player_selection)
+            console.log(`Scores. You:${player_score}, Computer:${computer_score}`)
+            }
+        } 
+    console.log(`Final Score You:${player_score}, Computer:${computer_score}`)
+    if (computer_score === player_score) {
+        console.log("It's a tie")
+    }
+    else if (computer_score > player_score) {
+        console.log("Computer wins")
+    }
+    else {
+        console.log("Player wins")
+    }
 }
 
 console.log(game())
