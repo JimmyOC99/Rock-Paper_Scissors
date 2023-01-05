@@ -42,14 +42,15 @@ function game() {
         play_round(player_selection)
         console.log(`Current Scores. You:${player_score}, Computer:${computer_score}`)
         if (player_score === Math.ceil(rounds/2)) {
-            console.log(`You won!`)
+            console.log(`CONGRATULATIONS!!! You won!`)
             break 
         }
         if (computer_score === Math.ceil(rounds/2)){
-            console.log(`You lost.`)
+            console.log(`Commiserations...You lost.`)
             break
         }
     }
+
     console.log(`Final Scores You:${player_score}, Computer:${computer_score}`)
 }
 
