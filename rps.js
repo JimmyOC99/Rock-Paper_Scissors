@@ -47,10 +47,16 @@ function game() {
         for (let i = 0; i < rounds; i++) {
             let player_selection = prompt("Rock, Paper, Scissors?").toLowerCase()
             play_round(player_selection)
-            console.log(`Scores. You:${player_score}, Computer:${computer_score}`)
+            if (i === rounds-1) {
+                console.log(`Final Score. You:${player_score}, Computer:${computer_score}`)
+            }
+            else {
+                console.log(`Current Score. You:${player_score}, Computer:${computer_score}`)
+            }
+            
             }
         } 
-    console.log(`Final Score You:${player_score}, Computer:${computer_score}`)
+    //console.log(`Final Score You:${player_score}, Computer:${computer_score}`)
     if (computer_score === player_score) {
         console.log("It's a tie")
     }
