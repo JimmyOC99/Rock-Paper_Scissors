@@ -1,0 +1,85 @@
+/* SETUP */
+* {
+    box-sizing: border-box;
+}
+
+/* SETTINGS */
+.red-color {
+    color:crimson;
+}
+.green-color {
+    color:seagreen;
+}
+.blue-color {
+    color:cadetblue;
+}
+
+/* DEV STYLES */
+
+section {
+    border: 4px solid lime;
+    /*min-height: 200px;*/
+}
+
+/*header, footer, main {
+    border: 3px solid red;  
+}*/
+
+inner-column {
+    display: block;
+    border: 8px solid orange;
+    padding: 20px;
+    margin: 10px 40px;
+}
+
+/* TYPOGRAPHY */
+
+/*.loud-voice {
+    font-size: 48px;
+    font-weight: 700;
+}*/
+
+/* STRUCTURE */
+
+body { /* Children are header, 
+    main & footer - use for moving footer */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* fill page */
+    font-family: 'Amatic SC', cursive;
+}
+
+main { /* shift footer to bottom */
+    flex-grow: 1;
+}
+
+header {
+    text-align: center;
+    font-size: 24px;
+}
+
+.loud-voice {
+    font-size: 3em;
+    font-weight: 700;
+}
+
+
+
+
+
+weapons-area {
+    display: flex;
+    justify-content: space-evenly;
+    border: 4px solid #5e5e5e;
+    border-radius: 5px;
+}
+
+/* RESPONSIVE LAYOUT */
+
+@media (max-width: 700px) {
+    header {
+        font-size: 17px;
+    }
+
+
+}

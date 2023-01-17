@@ -4,9 +4,69 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Rock Paper Scissors</title>
+    <!-- Link Main CSS file -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Reference font awesome in html -->
+    <link href="assets/css/solid.css" rel="stylesheet">
+    <link href="assets/css/brands.css" rel="stylesheet">
+    <!-- Link Google Fonts API -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
+
 </head>
-<body>
-    <script src="rps.js"></script>
-</body>
+    <body>
+        <header> 
+            <h1 class="loud-voice">
+                <span class="red-color">ROCK</span>&nbsp;
+                <span class="green-color">PAPER</span>&nbsp;
+                <span class="blue-color">SCISSORS</span>
+            <h1>
+            <p> 3 Options | 3 Lives | 1 Winner</p>
+            <p>
+                <span class="red-color">Rock</span> beats <span class="blue-color">Scissors</span> |
+                <span class="green-color">Paper</span> beats <span class="red-color">Rock</span> |
+                <span class="blue-color">Scissors</span> beats <span class="green-color">Paper</span> 
+            </p>           
+        </header>
+
+        <main>
+            <section>
+                <inner-column>
+                    
+                    <weapons-area>
+                        <button class="rock-button">
+                            <i class="fa-solid fa-hand-back-fist"></i> 
+                        </button>
+                        <button class="paper-button">
+                            <i class="fa-solid fa-hand"></i> 
+                        </button>
+                        <button class="scissors-button">
+                            <i class="fa-solid fa-hand-scissors"></i> 
+                        </button>
+                    </weapons-area>
+
+                </inner-column>
+            </section>
+
+            <section>
+                <inner-column>
+                    <h1>Design break</h1>
+                </inner-column>
+            </section>
+
+            <section>
+                <inner-column>
+                    <h1>Result description</h1>
+                </inner-column>
+            </section>
+        </main>
+        <footer>
+            <inner-column>
+                <h1>Footer</h1>
+            </inner-column>
+        </footer>
+        <!-- <script src="rps.js"></script> -->
+    </body>
 </html>
