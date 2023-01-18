@@ -4,14 +4,20 @@
 }
 
 /* SETTINGS */
+
+html {
+    --red: #dc143c;
+    --green: #2e8b57;
+    --blue: #5f9ea0;
+}
 .red-color {
-    color:crimson;
+    color:#dc143c;
 }
 .green-color {
-    color:seagreen;
+    color:#2e8b57;
 }
 .blue-color {
-    color:cadetblue;
+    color:#5f9ea0;
 }
 
 /* DEV STYLES */
@@ -58,13 +64,14 @@ header {
     font-size: 24px;
 }
 
+header p {
+    opacity: 0.7;
+}
+
 .loud-voice {
     font-size: 3em;
     font-weight: 700;
 }
-
-
-
 
 
 weapons-area {
@@ -74,11 +81,43 @@ weapons-area {
     border-radius: 5px;
 }
 
+.weapon-button {
+    background-color: transparent;
+    border: none;
+}
+
+.rock-icon, .pap-icon, .scissor-icon {
+    margin: 50px 0;
+    color: #5e5e5e;
+    font-size: 70px;
+  }
+
+  .rock-icon:hover, .pap-icon:hover, .scissor-icon:hover {
+    cursor: pointer;
+    transform: scale(1.2) translateY(-20px);
+    transition: 0.2s ease-in-out;
+    opacity: 0.5;
+}
+
+.rock-icon:hover {
+    color: var(--red);
+}
+
+.pap-icon:hover {
+    color: var(--green);
+}
+
+.scissor-icon:hover {
+    color: var(--blue);
+}
+
+
+
 /* RESPONSIVE LAYOUT */
 
-@media (max-width: 700px) {
+@media (max-width: 800px) {
     header {
-        font-size: 17px;
+        font-size: 12px;
     }
 
 
