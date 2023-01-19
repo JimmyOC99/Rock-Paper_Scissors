@@ -22,7 +22,7 @@
                 <span class="green-color">PAPER</span>&nbsp;
                 <span class="blue-color">SCISSORS</span>
             <h1>
-            <p> 3 Options | 3 Lives | 1 Winner</p>
+            <p> 3 Options | First to 3 | 1 Winner</p>
             <p>
                 <span class="red-color">Rock</span> beats <span class="blue-color">Scissors</span> |
                 <span class="green-color">Paper</span> beats <span class="red-color">Rock</span> |
@@ -36,36 +36,49 @@
                     
                     <weapons-area>
                         <button class="rock-button weapon-button">
-                            <i class="fa-solid fa-hand-back-fist rock-icon"></i> 
+                            <i class="fa-solid fa-hand-back-fist rock-icon weapon-icon"></i> 
                         </button>
                         <button class="paper-button weapon-button">
-                            <i class="fa-solid fa-hand pap-icon"></i> 
+                            <i class="fa-solid fa-hand pap-icon weapon-icon"></i> 
                         </button>
                         <button class="scissors-button weapon-button">
-                            <i class="fa-solid fa-hand-scissors scissor-icon"></i> 
+                            <i class="fa-solid fa-hand-scissors scissor-icon weapon-icon"></i> 
                         </button>
                     </weapons-area>
 
                 </inner-column>
             </section>
 
-            <section>
-                <inner-column>
-                    <h1>Design break</h1>
-                </inner-column>
-            </section>
-
             <results>
                 <inner-column>
-                    <div class="player-choice"><i class="fa-solid fa-question"></i></div>
+                    <game-result>
+                        <div class="choices">
+                            <div class="player-choice"> 
+                                <p class="player-title">Your Choice</p>
+                                <i class="player_fa_icon fa-solid fa-question q-icon"></i> 
+                            </div>
+                            <div class="computer-choice">
+                                <p class="comp-title">Computer's Choice</p>
+                                <i class="comp_fa_icon fa-solid fa-question q-icon"></i> 
+                            </div>
+                        </div>
+                        <div class="results">
+                            <p class="round">Round: 0</p>
+                            <p class="scores">Your Score: 0 ︱ Computer's Score: 0</p>
+                            <p class="outcome">Outcome:</p>
+                        </div>
+                    </game-result>
+
                 </inner-column>
             </results>
+            <div class="game-end">
+                <p class="end_message"></p>
+                <button class="play-again">New Game?</button>
+            </div>
         </main>
         <footer>
-            <inner-column>
-                <h1>Footer</h1>
-            </inner-column>
+            <p>Made by Jim</p>
         </footer>
-        <!-- <script src="rps.js"></script> -->
+        <script src="script.js" type="text/javascript"></script>
     </body>
 </html>

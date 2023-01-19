@@ -22,10 +22,7 @@ html {
 
 /* DEV STYLES */
 
-section {
-    border: 4px solid lime;
-    /*min-height: 200px;*/
-}
+
 
 /*header, footer, main {
     border: 3px solid red;  
@@ -33,9 +30,9 @@ section {
 
 inner-column {
     display: block;
-    border: 8px solid orange;
-    padding: 20px;
-    margin: 10px 40px;
+    max-width: 700px;
+    padding: 10px;
+    margin: 30px auto;
 }
 
 /* TYPOGRAPHY */
@@ -86,7 +83,7 @@ weapons-area {
     border: none;
 }
 
-.rock-icon, .pap-icon, .scissor-icon {
+.rock-icon, .pap-icon, .scissor-icon, .q-icon {
     margin: 50px 0;
     color: #5e5e5e;
     font-size: 70px;
@@ -111,6 +108,80 @@ weapons-area {
     color: var(--blue);
 }
 
+.disabled-button .fa-solid {
+    cursor: default;
+    transform: none;
+}
+
+.choices {
+    display: flex;
+    justify-content: space-evenly;
+    border: 4px solid #5e5e5e;
+    border-radius: 5px;
+    text-align: center;
+    transition: all .3s linear;
+}
+
+.choices .player-choice {
+    transition: all .3s linear;
+}
+
+.choices .computer-choice {
+    transition: all .3s linear;
+}
+
+.player-title, .comp-title {
+    margin: 10px 0 -30px 10px;
+    font-size: 30px;
+}
+
+.results {
+    text-align: center;
+    font-size: 30px;
+}
+
+/* FINISH */
+
+.pale {
+    opacity: 0.2;
+}
+
+.game-end {
+    text-align: center;
+}
+
+.play-again {
+    visibility: hidden;
+    margin-bottom: 60px;
+    padding: 20px;
+    font-size: 25px;
+    color: #5e5e5e;
+    border: 4px solid #5e5e5e;
+    border-radius: 5px;
+    background-color: transparent;
+    transition: all .3s;
+    cursor: pointer;
+  }
+  .play-again:hover {
+    background-color: #5e5e5e;
+    color: #fff;
+}
+
+.end_message {
+    font-size: 50px;
+}
+  
+
+/* FOOTER */
+footer {
+    position: fixed;
+    bottom: 0px;
+    height: 50px;
+    width: 100%;
+    background-color: #fff;
+    border-top: 4px solid #5e5e5e;
+    text-align: center;
+}
 
 
 /* RESPONSIVE LAYOUT */
@@ -120,5 +191,16 @@ weapons-area {
         font-size: 12px;
     }
 
+    .fa-solid, .q-icon {
+        font-size: 40px;
+        margin: 30px;
+    }
+    .player-title, .comp-title, .results {
+        font-size: 15px;
+    }
+
+    .end_message {
+        font-size: 30px;
+    }
 
 }
